@@ -1,0 +1,97 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for centering and aligning content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for form */
+form {
+    background-color: #ffffff; /* White background for form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Margin below form */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block; /* Ensure label is on its own line */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%; /* Full-width inputs */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Subtle border */
+}
+
+button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* No space between cells */
+    background-color: #ffffff; /* White background for table */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Blue background for headers */
+    color: #ffffff; /* White text */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust form input and button width for smaller screens */
+    form input[type="text"],
+    form input[type="number"],
+    button {
+        width: 100%;
+    }
+    
+    /* Smaller font size for table headers and cells */
+    th, td {
+        font-size: 14px;
+    }
+}
